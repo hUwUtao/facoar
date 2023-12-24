@@ -54,7 +54,7 @@ with open(f"pages/{P}/index.html", "wb") as tio:
         buf += b"<fieldset>"
         buf += (
           e.get_attribute("outerHTML")
-          .replace('href="', 'href="https://mbasic.facebook.com/')
+          .replace('href="/', 'href="https://mbasic.facebook.com/')
           .encode("utf8")
         )
         buf += b"</fieldset>\n"
