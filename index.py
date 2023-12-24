@@ -24,10 +24,10 @@ else:
   cookies = pickle.load(open("cookies.pickle", "rb"))
   for cookie in cookies:
     driver.add_cookie(cookie)
-  driver.get(
-    # INNOCENT COW!
-    "data:text/plain;charset=utf-8;base64,X19fX19fX19fX19fX19fX19fX19fX19fX18NCjwgSGV5LCBsb29rIGF0IHRoZSB0ZXJtaW5hbCEgPg0KICAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KICAgICAgICAgICAgXl9fXiANCiAgICAgICAgICAgIChvbylfX19fX19fDQogICAgICAgICAgICAgKF9fKSAgICAgICApLw0KICAgICAgICAgICAgICAgICB8fC0tLS13IHwNCiAgICAgICAgICAgICAgICAgfHwgICAgIHx8"
-  )
+driver.get(
+  # INNOCENT COW!
+  "data:text/plain;charset=utf-8;base64,X19fX19fX19fX19fX19fX19fX19fX19fX18NCjwgSGV5LCBsb29rIGF0IHRoZSB0ZXJtaW5hbCEgPg0KICAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KICAgICAgICAgICAgXl9fXiANCiAgICAgICAgICAgIChvbylfX19fX19fDQogICAgICAgICAgICAgKF9fKSAgICAgICApLw0KICAgICAgICAgICAgICAgICB8fC0tLS13IHwNCiAgICAgICAgICAgICAgICAgfHwgICAgIHx8"
+)
 
 driver.get(input("Enter the URL you want to save: "))
 print("Started")
